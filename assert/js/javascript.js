@@ -30,3 +30,20 @@
   setInterval(updateCountdown, 1000);
   updateCountdown(); // gọi 1 lần khi load
 
+
+document.getElementById("copyBtn").addEventListener("click", function () {
+    const text = document.getElementById("qr_thanh_toan").innerText;
+    const icon = document.getElementById("copyIcon");
+
+    navigator.clipboard.writeText(text).then(() => {
+        icon.classList.remove("fa-copy");
+        icon.classList.add("fa-check");
+
+        setTimeout(() => {
+            icon.classList.remove("fa-check");
+            icon.classList.add("fa-copy");
+        }, 1500);
+    });
+});
+
+
