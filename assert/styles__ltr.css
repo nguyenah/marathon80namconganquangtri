@@ -190,6 +190,13 @@ header .navbar-collapse .navbar-nav .nav-link {
     font-size: 18px;
 }
 
+
+.sponsors-section img {
+    border: 2px solid #ffc107;
+    padding: 5px;
+    background-color: white;
+}
+
 .intro-section .main-title {
     font-size: 26px;
     font-weight: 700
