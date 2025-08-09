@@ -1,5 +1,5 @@
  // Set ngày bắt đầu sự kiện
-  const targetDate = new Date("2025-08-15T00:00:00").getTime();
+  const targetDate = new Date("2025-08-11T00:00:00").getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
